@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{ page.title }}</title>
+<meta name="author" content="Orange">
+{% if page.url == "/404.html" %}
+<meta http-equiv="refresh" content="5; url=/">
+{% endif %}
+<style>
+    body {
+		background-color:  {{ page.pale-gray }};
+		text-align: center;
+    }
+    h1 { margin: 0; padding: 0; }
+    .ehri-purple { color: white; background-color: {{ page.ehri-purple }}; }
+    .pale-gray { background-color: {{ page.pale-gray }}; }
+    .muted-gray { color: {{ page.muted-gray }}; }
+    .medium-gray { color: {{ page.medium-gray }}; }
+    .dark-gray { color: {{ page.dark-gray }}; }
+    .almost-black { color: {{ page.almost-black }}; }
+    .glow-color { background-color: {{ page.glow-color }}; }
+    .search-glow { background-color: {{ page.search-glow }}; }
+    .doc-color { color: {{ page.doc-color }}; }
+    .repo-color { color: {{ page.repo-color }}; }
+    .country-color { color: {{ page.country-color }}; }
+    .agent-color { color: {{ page.agent-color }}; }
+    .user-color { color: {{ page.user-color }}; }
+    .concept-color { color: {{ page.concept-color }}; }
+    .virtual-color { color: {{ page.virtual-color }}; }
+    .promoted-color { background-color: {{ page.promoted-color }}; }
+    .promoted-arrow-color { color: {{ page.promoted-arrow-color }}; }
+</style>
+</head>
+
+<body>
+      {{content}}
+</body>
+</html>

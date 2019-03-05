@@ -1,0 +1,10 @@
+markdown: kramdown
+name: color-scheme
+description: color scheme tests 
+encoding: utf-8
+
+baseurl: ""
+url: "https://tests.reveb.la"
+
+layouts_dir: _jekyll/layouts
+includes_dir: _jekyll/includes
