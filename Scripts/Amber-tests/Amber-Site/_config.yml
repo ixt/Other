@@ -1,0 +1,10 @@
+markdown: kramdown
+name: amber
+encoding: utf-8
+
+baseurl: "/amber"
+url: https://reveb.la
+
+collections:
+    objects:
+        output: true

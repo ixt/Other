@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Amber Object - {{ page.objid }} - {{ page.name }} </title>
+    <meta name="author" content="Revebla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <style>
+		* {
+			font-family: "sansserif";
+		}
+		h2 {
+		}
+		h3 {
+            margin-bottom: 0;
+		}
+        .quantity {
+            font-size: 0.618em;
+            color: grey;
+        }
+		.description {
+		}
+		.item-photo {
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			margin: 0;
+		}
+		.review {
+		}
+		.dates {
+			font-size: 0.618em;
+		}
+		.locationinfo {
+			font-size: 0.618em;
+		}
+		.weight {
+			font-weight: 600;
+		}
+
+    </style>
+</head>
+
+<body>
+    <img class="item-photo" 
+         src="{{ site.baseurl }}{{ page.id }}"> 
+    </img>
+    <h2> {{ page.objid }} - {{ page.name }} (v{{ page.version }}) </h2>
+    <section class="quantity"> 
+        <em> quantity : </em> {{ page.quantity }} 
+    </section>
+    <section class="dates">
+        <em> acquired : </em> {{ page.date_acquired }} (accurate to the {{ page.date_accuracy }})
+        {% if page.date_remove != "N/A" %}
+        </br>
+        <em> removed : </em> {{ page.date_removed }}
+        {% endif %}
+    </section>
+    <section class="locationinfo"> 
+        <em> location : </em></br>
+        {{ page.location }} ({{ page.location_acquired }})
+    </section>
+    <section class="weight">
+        {{ page.weight }} {{ page.weight_units }} 
+    </section>
+    <section class="description" >
+        <em> description : </em>
+        {{ page.description }}
+    </section>
+    <section class="review">
+        <em> review : </em>
+        {{ page.review }}
+    </section>
+    <!-- {{ page.type }} -->
+</body>
+</html>
