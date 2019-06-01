@@ -1,0 +1,16 @@
+{
+    "objid" : "000",
+    "name" : "Logbook",
+    "date_accuracy" : "Day",
+    "date_acquired" : "2016-08-31",
+    "date_removed" : "N/A",
+    "description" : "A small notebook used for logging made by midori, B6 size grid with penloop cased by a strong paper cover with instax photo on the front",
+    "location" : "On Person",
+    "location_acquired" : "N/A",
+    "quantity" : "1",
+    "review" : "Currently a perfect notebook for me",
+    "type" : "Stationary",
+    "version" : "8",
+    "weight" : "240",
+    "weight_units" : "grams"
+}

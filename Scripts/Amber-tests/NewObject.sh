@@ -59,42 +59,42 @@ write_objectfile(){
     "weight_units" : "$weight_units"
 }
 EOF
-ObjectFile="$objid-${name// /_}.json"
 }
 
 do_form(){
     VALUES=( $(dialog --form "New Object" 0 0 0 \
-objid             1  0 "$objid"             1  19 10 0 \
+objid             1  0 "$objid"             1  19 5 0 \
 name              2  0 "$name"              2  19 10 0 \
 date_accuracy     3  0 "$date_accuracy"     3  19 10 0 \
 date_acquired     4  0 "$date_acquired"     4  19 10 0 \
 date_removed      5  0 "$date_removed"      5  19 10 0 \
-description       6  0 "$description"       6  19 10 0 \
+description       6  0 "$description"       6  19 255 0 \
 location          7  0 "$location"          7  19 10 0 \
 location_acquired 8  0 "$location_acquired" 8  19 10 0 \
 quantity          9  0 "$quantity"          9  19 10 0 \
-review            10 0 "$review"            10 19 10 0 \
+review            10 0 "$review"            10 19 255 0 \
 itype             11 0 "$itype"             11 19 10 0 \
-version           12 0 "$version"           12 19 10 0 \
+version           12 0 "$version"           12 19 4 0 \
 weight            13 0 "$weight"            13 19 10 0 \
 weight_units      14 0 "$weight_units"      14 19 10 0 \
     3>&1 1>&2 2>&3 | sed -e "s/ /@/g"))
-objid="${VALUES[0]//@/ }"
-name="${VALUES[1]//@/ }"
-date_accuracy="${VALUES[2]//@/ }"
-date_acquired="${VALUES[3]//@/ }"
-date_removed="${VALUES[4]//@/ }"
-description="${VALUES[5]//@/ }"
-location="${VALUES[6]//@/ }"
-location_acquired="${VALUES[7]//@/ }"
-quantity="${VALUES[8]//@/ }"
-review="${VALUES[9]//@/ }"
-itype="${VALUES[10]//@/ }"
-version="${VALUES[11]//@/ }"
-weight="${VALUES[12]//@/ }"
-weight_units="${VALUES[13]//@/ }"
+    objid="${VALUES[0]//@/ }"
+    name="${VALUES[1]//@/ }"
+    date_accuracy="${VALUES[2]//@/ }"
+    date_acquired="${VALUES[3]//@/ }"
+    date_removed="${VALUES[4]//@/ }"
+    description="${VALUES[5]//@/ }"
+    location="${VALUES[6]//@/ }"
+    location_acquired="${VALUES[7]//@/ }"
+    quantity="${VALUES[8]//@/ }"
+    review="${VALUES[9]//@/ }"
+    itype="${VALUES[10]//@/ }"
+    version="${VALUES[11]//@/ }"
+    weight="${VALUES[12]//@/ }"
+    weight_units="${VALUES[13]//@/ }"
     write_objectfile
-    cat $tmp_ObjectFile
+    ObjectFile="$objid-${name// /_}.json"
+    cp $tmp_ObjectFile objects/$ObjectFile
 }
 
 do_about() {

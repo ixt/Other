@@ -1,0 +1,16 @@
+{
+    "objid" : "002",
+    "name" : "Watch",
+    "date_accuracy" : "N/A",
+    "date_acquired" : "N/A",
+    "date_removed" : "N/A",
+    "description" : "Pebble Round 14mm Black face with gold band",
+    "location" : "On Person",
+    "location_acquired" : "CeX",
+    "quantity" : "1",
+    "review" : "Good watch, doesnt recieve updates but has lots of nifty features I use daily, battery life is being lost and didn't have a lot to begin with",
+    "type" : "Accessory",
+    "version" : "2",
+    "weight" : "42",
+    "weight_units" : "grams"
+}

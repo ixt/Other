@@ -1,0 +1,16 @@
+{
+    "objid" : "004",
+    "name" : "Keyring",
+    "date_accuracy" : "N/A",
+    "date_acquired" : "N/A",
+    "date_removed" : "N/A",
+    "description" : "A collection of keys, some small, a yubikey 4c and a tile pro. Stainless steal ring.",
+    "location" : "Bag",
+    "location_acquired" : "N/A",
+    "quantity" : "1",
+    "review" : "Solid ring, pretty standard and hard wearing, taking keys off and putting them on could be easier",
+    "type" : "Accessory",
+    "version" : "1",
+    "weight" : "45",
+    "weight_units" : "grams"
+}

@@ -1,0 +1,16 @@
+{
+    "objid" : "001",
+    "name" : "Wallet",
+    "date_accuracy" : "Year",
+    "date_acquired" : "2016",
+    "date_removed" : "N/A",
+    "description" : "A simple 'card only' wallet that is made by allocacoc called Dax v2",
+    "location" : "On Person",
+    "location_acquired" : "N/A",
+    "quantity" : "1",
+    "review" : "Good, seams melt with heat/sunlight but otherwise hardwearing ",
+    "type" : "Accessory",
+    "version" : "2",
+    "weight" : "50",
+    "weight_units" : "grams"
+}
