@@ -1,0 +1,16 @@
+{
+    "objid" : "005",
+    "name" : "Phone",
+    "date_accuracy" : "Month",
+    "date_acquired" : "2019-02",
+    "date_removed" : "N/A",
+    "description" : "A Samsung Galaxy Note 9 512GB with 256mb sd card, offical tough case",
+    "location" : "On Person",
+    "location_acquired" : "CeX",
+    "quantity" : "1",
+    "review" : "A solid phone, surveilance tech but good for taking notes, consuming media and for content creation",
+    "type" : "Tech",
+    "version" : "7",
+    "weight" : "N/A",
+    "weight_units" : "N/A"
+}
