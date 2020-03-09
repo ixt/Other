@@ -28,11 +28,18 @@ module externalHolder(){
 	translate([-(DeckSize[1]*(1-golden_ratio)+T*2),0,0])cube([DeckSize[1]*(1-golden_ratio)+T,DeckSize[2]+T,T]);
 };
 
+module base(){
+	cube([DeckSize[0]+T*5,DeckSize[1]+T*5,T]);
+	cube([DeckSize[0]+T*5,T,DeckSize[2]*(1-golden_ratio)+T*5]);
+	cube([T,DeckSize[1]+T*5,DeckSize[2]*(1-golden_ratio)+T*5]);
+	translate([0,DeckSize[1]+T*5,0])cube([DeckSize[0]+T*5,T,DeckSize[2]*(1-golden_ratio)+T*5]);
+	translate([DeckSize[0]+T*5,0,0])cube([T,DeckSize[1]+T*6,DeckSize[2]*(1-golden_ratio)+T*5]);
+};
 module lid(){
 	cube([DeckSize[0]+T*5,DeckSize[1]+T*5,T]);
-	cube([DeckSize[0]+T*5,T,DeckSize[2]/2+T*5]);
-	cube([T,DeckSize[1]+T*5,DeckSize[2]/2+T*5]);
-	translate([0,DeckSize[1]+T*5,0])cube([DeckSize[0]+T*5,T,DeckSize[2]/2+T*5]);
-	translate([DeckSize[0]+T*5,0,0])cube([T,DeckSize[1]+T*6,DeckSize[2]/2+T*5]);
+	cube([DeckSize[0]+T*5,T,DeckSize[2]*(golden_ratio)+T*5]);
+	cube([T,DeckSize[1]+T*5,DeckSize[2]*(golden_ratio)+T*5]);
+	translate([0,DeckSize[1]+T*5,0])cube([DeckSize[0]+T*5,T,DeckSize[2]*(golden_ratio)+T*5]);
+	translate([DeckSize[0]+T*5,0,0])cube([T,DeckSize[1]+T*6,DeckSize[2]*(golden_ratio)+T*5]);
 };
-internalHolder();
+lid();
